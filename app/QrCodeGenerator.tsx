@@ -239,7 +239,7 @@ function QrCodeGenerator() {
   type="file"
   id="logo"
   accept="image/*"
-  onChange={(e: any) => {
+  onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
     if (e.target.files && e.target.files[0]) {
       setLogoFile(e.target.files[0]);
 
